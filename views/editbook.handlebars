@@ -1,0 +1,13 @@
+<h1>Edite o livro abaixo</h1>
+<form action="/books/updatebook" method="post">
+  <input type="hidden" name="id" value="{{book.id}}">
+  <div class="boxInput">
+    <label for="ititle">Titulo:</label>
+    <input type="text" name="title" id="ititle" value="{{book.title}}" required>
+  </div>
+  <div class="boxInput">
+    <label for="ipageqty">Númeo de páginas:</label>
+    <input type="number" name="pageqty" id="ipageqty" value="{{book.pageqty}}" required>
+  </div>
+  <input type="submit" value="Atualizar">
+</form>

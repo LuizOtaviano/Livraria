@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar li {
+  margin-right: 20px;
+}
+
+main {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+form {
+  width: 100%;
+  border: 3px solid black;
+  padding: 15px;
+}
+
+.boxInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.boxInput > label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.boxInput > input {
+  padding: 5px;
+}
+
+form > input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* GET BOOKS */
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+td > a {
+  text-decoration: none;
+}
+
+/* Livro por id */
+.bookBox {
+  width: 100%;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+}

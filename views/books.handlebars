@@ -1,0 +1,19 @@
+<h1>Livros Disponíveis</h1>
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Livro</th>
+    <th>Número de páginas</th>
+  </thead>
+  <tbody>
+    {{#each books}}
+      <tr>
+        <td>{{this.id}}</td>
+        <td><a href="/books/{{this.id}}" target="_self" rel="next">{{this.title}}</a></td>
+        <td>{{this.pageqty}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<a href="/" target="_self" rel="prev">Voltar</a>

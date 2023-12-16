@@ -1,0 +1,9 @@
+<h1>Informações do livro</h1>
+<input type="hidden" name="bookid" value="{{book.id}}">
+<div class="bookBox">
+  <p>O titulo do livro é <strong>{{book.title}}</strong> e ele tem <strong>{{book.pageqty}}</strong> páginas</p>
+  <a href="/books/edit/{{book.id}}" target="_self"><img src="/icons/edit_icon.svg" alt="icone de editar"></a>
+  <a href="/books/remove/{{book.id}}" target="_self"><img id="trash" src="/icons/delet_icon.svg" alt="icone de lixo"></a>
+</div>
+
+<a href="/books" target="_self" rel="prev">Voltar</a>
